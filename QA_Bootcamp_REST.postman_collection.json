@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "c54340d7-232a-4b1e-a183-2594c8d4aac3",
+		"name": "QA_Bootcamp_REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24929423"
+	},
+	"item": [
+		{
+			"name": "PostPet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 3,\n  \"category\": {\n    \"id\": 12,\n    \"name\": \"Dragon\"\n  },\n  \"name\": \"Yami\",\n  \"photoUrls\": [\n    \"https://artsphere.org/wp-content/uploads/2018/04/pixabay-mountains-8747922_1280-.jpg\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 4,\n      \"name\": \"Flying\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutPet",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 3,\n  \"category\": {\n    \"id\": 12,\n    \"name\": \"Dragon\"\n  },\n  \"name\": \"Ygdrasil\",\n  \"photoUrls\": [\n    \"https://artsphere.org/wp-content/uploads/2018/04/pixabay-mountains-8747922_1280-.jpg\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 4,\n      \"name\": \"Flying\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/3",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePet",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/3",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
